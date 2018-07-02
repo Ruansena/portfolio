@@ -1,0 +1,166 @@
+*, *::after, *::before {
+	box-sizing: border-box;
+}
+@font-face {
+	font-family: "Hacked";
+	src: url("hacked.ttf");
+}
+body, ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+html {
+	font-family: sans-serif;
+}
+body{
+	background-color: #77C1CB;
+}
+.head {
+	color: #fff;
+	background-color: rgba(0, 0, 0, .4);
+}
+.flex-container {
+	display: flex;
+	margin: 0 auto;
+}
+.head .flex-container{
+	justify-content: space-between;
+	align-items: stretch;
+	width: 70%;
+}
+.logo::before {
+	content: "👨‍💻";
+}
+.logo {
+	margin: .5em .2em;
+	font-size: 2.2em;
+	font-family: "Hacked", "Georgia", sans-serif;
+	letter-spacing: 3px;
+}
+.logo::first-letter {
+	letter-spacing: 5px;
+}
+.hire-me::before {
+	content: "📞";
+	margin-right: 4px;
+}
+.hire-me {
+	display: flex;
+	align-items: center;
+	padding: 0 1em;
+	font-weight: bold;
+	text-decoration: none;
+	color: inherit;
+	background-color: #4F31A8;
+}
+.introduction {
+	flex-flow: column wrap;
+	margin-top: 2em;
+	width: 75%;
+	height: 400px;
+}
+.introduction-img {
+	margin-right: 1em;
+	height: 100%;
+}
+.introduction-text {
+	margin: 2em 0;
+	padding: 1em;
+	font-size: 1.2em;
+	color: #fff;
+	text-shadow: 1px 1px 2px #000;
+	border: 3px solid #4F31A8;
+	border-radius: 4px;
+	background-color: rgba(0, 0, 0, .8);
+}
+.introduction-text:hover {
+	border-color: #6141c2;
+	box-shadow: 0 0 12px #6141c2;
+}
+.introduction-title, .introduction-data, .introduction-comment {
+	margin: .75em 0;
+	font-size: inherit;
+	font-weight: normal;
+
+}
+.introduction-title {
+	margin-top: 0;
+}
+.introduction-data, .introduction-comment {
+	padding-left: 1em;
+}
+.introduction-comment {
+	color: #6141c2;
+}
+.quote {
+	padding: .5em;
+	font-weight: bold;
+	color: #222;
+	text-shadow: 1px 1px 1px rgba(255, 255, 255, .8);
+	border-radius: 12px;
+	background-color: rgba(0, 0, 0, .4);
+}
+.skills {
+	flex-flow: column wrap;
+	align-items: center;
+	justify-content: space-around;
+	width: 85%;
+	margin: 1em auto;
+	font-size: 2em;
+	background-color: #FFF;
+	border-radius: 5px;
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, .8);
+}
+.skills-title {
+	margin: 0;
+}
+.lists {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+}
+.list-item {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin: 1em auto;
+}
+.list-item::before {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 64px;
+	height: 64px;
+	margin-right: .2em;
+	border-radius: 50%;
+	border: 3px solid black;
+	background-color: #48ABCD;
+}
+.skills-title::before {
+	content: "⚔";
+	background-color: ;
+}
+.collaboration::before {
+	content: "🤝";
+}
+.analytical::before {
+	content: "🐞";
+}
+.lang::before {
+	content: "💬";
+}
+.design::before {
+	content: "🖌";
+}
+.thanks {
+	width: 70%;
+	justify-content: center;
+	font-size: 2em;
+	text-align: center;
+}
